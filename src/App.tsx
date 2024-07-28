@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import About from "./components/About";
 import Contacts from "./components/Contacts";
@@ -13,22 +14,56 @@ function App() {
   if (isSmallScreen) {
     a = (
       <>
-        <Headings head="Links" id="links" />
+        <Headings head="Links" />
         &nbsp;
       </>
     );
   }
+
+  useEffect(() => {
+    const handleScroll = (event: Event) => {
+      const target = event.target as HTMLAnchorElement;
+      if (target && target.tagName === "A" && target.hash) {
+        event.preventDefault();
+        const targetId = target.hash.substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
+          const targetPosition =
+            targetElement.getBoundingClientRect().top +
+            window.pageYOffset -
+            navbarHeight;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+          });
+        }
+      }
+    };
+
+    const anchors =
+      document.querySelectorAll<HTMLAnchorElement>("a[href^='#']");
+    anchors.forEach((anchor) => {
+      anchor.addEventListener("click", handleScroll);
+    });
+
+    return () => {
+      anchors.forEach((anchor) => {
+        anchor.removeEventListener("click", handleScroll);
+      });
+    };
+  }, []);
+
   return (
     <>
       <div id="home"></div>
       <NavBar />
       &nbsp;
       <Home />
-      <div id="about"></div>
-      &nbsp;
+      &nbsp;<div id="about"></div>
       <About />
-      &nbsp;
-      <Headings head="Projects" id="projects" />
+      &nbsp;<div id="projects"></div>
+      <Headings head="Projects" />
       &nbsp;
       <Projects
         heading="EazyGo"
@@ -86,7 +121,8 @@ function App() {
         gitLink="https://github.com/aswin-asokan/Kerala-IoT-Challenge"
       />
       &nbsp;
-      <Headings head="Contacts" id="contact" />
+      <Headings head="Contacts" />
+      <div id="contact"></div>
       <Contacts />
       {a}
       <FooterPage />
@@ -94,4 +130,5 @@ function App() {
     </>
   );
 }
+
 export default App;
