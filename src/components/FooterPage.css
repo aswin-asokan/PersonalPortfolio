@@ -1,0 +1,25 @@
+/* FooterPage.css */
+.built-with-text {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 990px) {
+  .built-with-text {
+    order: -1;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
+  }
+  .built-with-text p {
+    margin-left: 0;
+  }
+}
+.custom-link:hover {
+  text-decoration: none;
+  color: black;
+}
+.custom-link {
+  color: black;
+  text-decoration: none;
+}
