@@ -21,7 +21,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="#">
           <img
-            src="src/assets/images/Aswin__2_-removebg-preview.png"
+            src="/assets/images/Aswin__2_-removebg-preview.png"
             height={35}
             alt="Brand Logo"
           />
