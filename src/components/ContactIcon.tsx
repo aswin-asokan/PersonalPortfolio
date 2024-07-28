@@ -14,16 +14,14 @@ function ContactIcon({ icon: Icon, title, content }: Props) {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
 
   const iconMargin = isSmallScreen ? "0 10px 0 0" : "0";
-  let size, head, ic1, ic2, alignment;
+  let size, head, ic1, ic2;
   if (!isSmallScreen) {
     size = "12%";
     head = <h4 style={{ marginTop: "20px" }}>{title}</h4>;
     ic1 = <Icon size={size} />;
-    alignment = "align-items-center";
   } else {
     size = "1em";
     ic2 = <Icon size={size} style={{ margin: iconMargin }} />;
-    alignment = "align-items-start";
   }
   return (
     <>
