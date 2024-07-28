@@ -13,12 +13,17 @@ function FooterPage() {
   const isMediumScreen = useMediaQuery({
     query: "(min-width: 768px) and (max-width: 991px)",
   });
-
+  let a1, a2;
+  if (isSmallScreen) {
+    a1 = <p>&copy; Aswin Asokan, 2024</p>;
+  } else {
+    a2 = <p>&copy; Aswin Asokan, 2024</p>;
+  }
   return (
     <div className="container">
       <div className="row align-items-center justify-content-between">
         <div className="col-md-4 col-lg-4 text-left">
-          <p>&copy; Aswin Asokan, 2024</p>
+          {a2}
           <div className="d-none d-md-block d-lg-block">
             {isMediumScreen && (
               <div className="col-12 text-center">
@@ -154,6 +159,7 @@ function FooterPage() {
           </div>
         )}
       </div>
+      {a1}
     </div>
   );
 }
