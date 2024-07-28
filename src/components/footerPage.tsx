@@ -148,8 +148,8 @@ function FooterPage() {
         {isSmallScreen && (
           <div className="col-12 text-center">
             <p className="built-with-text">
-              <FaHeart size={24} style={{ color: "red", marginRight: "8px" }} />{" "}
-              Built With
+              Built With{" "}
+              <FaHeart size={24} style={{ color: "red", marginLeft: "8px" }} />
             </p>
           </div>
         )}
