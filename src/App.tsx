@@ -66,22 +66,6 @@ function App() {
       <Headings head="Projects" />
       &nbsp;
       <Projects
-        heading="EazyGo"
-        paragraph="EazyGo is a mobile application built with flutter. It provides users with an easy way to report and manage pipeline issues, road patches, and other infrastructure needs. The app provides users with a streamlined way to report needs to the appropriate authorities and track the progress of the work being done."
-        pic="/assets/images/eazygo mockup (1).png"
-        pos="right"
-        gitLink="https://github.com/aswin-asokan/EazyGo-MAp"
-      />
-      &nbsp;
-      <Projects
-        heading="EazyGo Authority"
-        paragraph="EazyGo-Authority is a web application built with flutter. Specifically designed for authorities to efficiently manage reports submitted by users through the EazyGo mobile application."
-        pic="/assets/images/eazygoAuth Mockup (1).png"
-        pos="left"
-        gitLink="https://github.com/aswin-asokan/eazyGo_Auth"
-      />
-      &nbsp;
-      <Projects
         heading="Pocket Dresses"
         paragraph="Welcome to Pocket Dresses, a charming shopping app created during the Flutter Fly workshop. With a minimalistic and modern design, Pocket Dresses offers a curated selection of cute dresses for every occasion. Enjoy a seamless shopping experience as you explore our stylish collection."
         pic="/assets/images/Cover.png"
