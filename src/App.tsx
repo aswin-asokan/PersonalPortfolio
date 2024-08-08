@@ -67,7 +67,7 @@ function App() {
       &nbsp;
       <Projects
         heading="EazyGo"
-        paragraph="EazyGo is a mobile application built with flutter. It provides users with an easy way to report and manage pipeline issues, road patches, and other infrastructure needs. The app provides users with a streamlined way to report needs to the appropriate authorities and track the progress of the work being done."
+        paragraph="EazyGo is a mobile application built with flutter. It provides users with an easy way to report and manage pipeline issues, road patches, and other infrastructure needs. The app provides users with a streamlined way to report needs to the appropriate authorities and track the progress of the work being done.<br/>Flutter | Firebase"
         pic="/assets/images/eazygo mockup (1).png"
         pos="right"
         gitLink="https://github.com/aswin-asokan/EazyGo-MAp"
