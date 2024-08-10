@@ -86,7 +86,7 @@ function App() {
         paragraph="Welcome to Pocket Dresses, a charming shopping app created during the Flutter Fly workshop. With a minimalistic and modern design, Pocket Dresses offers a curated selection of cute dresses for every occasion. Enjoy a seamless shopping experience as you explore our stylish collection."
         pic="/assets/images/Cover.png"
         pos="right"
-        gitLink="https://github.com/aswin-asokan/FlutterFly/tree/main/task5"
+        gitLink="https://github.com/aswin-asokan/FlutterFly/"
       />
       &nbsp;
       <Projects
