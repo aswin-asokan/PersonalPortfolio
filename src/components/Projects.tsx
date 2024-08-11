@@ -7,8 +7,9 @@ interface Props {
   pic: string;
   pos: string;
   gitLink: string;
+  language: string;
 }
-function Projects({ heading, paragraph, pic, pos, gitLink }: Props) {
+function Projects({ heading, paragraph, pic, pos, gitLink, language }: Props) {
   let screenElementL, screenElementR, screenElement;
   const isLargeScreen = useMediaQuery({ query: "(min-width: 990px)" });
   if (pos == "left" && isLargeScreen) {
@@ -42,7 +43,10 @@ function Projects({ heading, paragraph, pic, pos, gitLink }: Props) {
         <div className="row align-items-start">
           {screenElementL}
           <div className="col-lg">
-            <h1 className="h3">{heading}</h1>
+            <div>
+              <h1 className="h3">{heading}</h1>
+              <p>{language}</p>
+            </div>
             {screenElement}
             <p>{paragraph}</p>
             <Button variant="github">

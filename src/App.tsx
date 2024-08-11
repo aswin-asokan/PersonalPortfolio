@@ -66,27 +66,12 @@ function App() {
       <Headings head="Projects" />
       &nbsp;
       <Projects
-        heading="EazyGo"
-        paragraph="EazyGo is a mobile application built with flutter. It provides users with an easy way to report and manage pipeline issues, road patches, and other infrastructure needs. The app provides users with a streamlined way to report needs to the appropriate authorities and track the progress of the work being done."
-        pic="/assets/images/eazygo mockup (1).png"
-        pos="right"
-        gitLink="https://github.com/aswin-asokan/EazyGo-MAp"
-      />
-      &nbsp;
-      <Projects
-        heading="EazyGo Authority"
-        paragraph="EazyGo-Authority is a web application built with flutter. Specifically designed for authorities to efficiently manage reports submitted by users through the EazyGo mobile application."
-        pic="/assets/images/eazygoAuth Mockup (1).png"
-        pos="left"
-        gitLink="https://github.com/aswin-asokan/eazyGo_Auth"
-      />
-      &nbsp;
-      <Projects
         heading="Pocket Dresses"
         paragraph="Welcome to Pocket Dresses, a charming shopping app created during the Flutter Fly workshop. With a minimalistic and modern design, Pocket Dresses offers a curated selection of cute dresses for every occasion. Enjoy a seamless shopping experience as you explore our stylish collection."
         pic="/assets/images/Cover.png"
         pos="right"
         gitLink="https://github.com/aswin-asokan/FlutterFly/"
+        language="Flutter | Hive"
       />
       &nbsp;
       <Projects
@@ -95,22 +80,43 @@ function App() {
         pic="/assets/images/todo.png"
         pos="left"
         gitLink="https://github.com/aswin-asokan/taskevo"
+        language="Flutter | Hive | Flutter Quill"
       />
       &nbsp;
       <Projects
-        heading="Dairy Management"
-        paragraph="A simple yet beautiful java application made for the purpose of managing a dairy. This can be used for tracking sales and purchases, managing staff details and also it has an interactive dashboard to view all details at one place."
-        pic="/assets/images/dairymanagement (2).png"
+        heading="EazyGo"
+        paragraph="EazyGo is a mobile application built with flutter. It provides users with an easy way to report and manage pipeline issues, road patches, and other infrastructure needs. The app provides users with a streamlined way to report needs to the appropriate authorities and track the progress of the work being done."
+        pic="/assets/images/eazygo mockup (1).png"
         pos="right"
-        gitLink="https://github.com/aswin-asokan/DairyManagement-App"
+        gitLink="https://github.com/aswin-asokan/EazyGo-MAp"
+        language="Flutter | Firebase | GCP"
+      />
+      &nbsp;
+      <Projects
+        heading="EazyGo Authority"
+        paragraph="EazyGo-Authority is a web application built with flutter. Specifically designed for authorities to efficiently manage reports submitted by users through the EazyGo mobile application."
+        pic="/assets/images/eazygoAuth Mockup (1).png"
+        pos="left"
+        gitLink="https://github.com/aswin-asokan/eazyGo_Auth"
+        language="Flutter | Firebase | OSM"
       />
       &nbsp;
       <Projects
         heading="Hotel Management"
         paragraph="A streamlined Java application for efficient hotel management. This user-friendly tool centralizes room and rental details, simplifying booking and reservation processes. With just a click, calculate checkout amounts effortlessly. Additionally, generate insightful reports for specified dates, enhancing your decision-making capabilities."
         pic="/assets/images/hotelmanagement.png"
-        pos="left"
+        pos="right"
         gitLink="https://github.com/aswin-asokan/Hotelmanagement-App"
+        language="Java | MySQL"
+      />
+      &nbsp;
+      <Projects
+        heading="Dairy Management"
+        paragraph="A simple yet beautiful java application made for the purpose of managing a dairy. This can be used for tracking sales and purchases, managing staff details and also it has an interactive dashboard to view all details at one place."
+        pic="/assets/images/dairymanagement (2).png"
+        pos="left"
+        gitLink="https://github.com/aswin-asokan/DairyManagement-App"
+        language="Java | MySQL"
       />
       &nbsp;
       <Projects
@@ -119,6 +125,7 @@ function App() {
         pic="/assets/images/iot challege Mockup.png"
         pos="right"
         gitLink="https://github.com/aswin-asokan/Kerala-IoT-Challenge"
+        language="Arduino IDE | Arduino IoT Cloud | Firebase"
       />
       &nbsp;
       <Headings head="Contacts" />
