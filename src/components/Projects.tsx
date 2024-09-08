@@ -45,7 +45,7 @@ function Projects({ heading, paragraph, pic, pos, gitLink, language }: Props) {
           <div className="col-lg">
             <div>
               <h1 className="h3">{heading}</h1>
-              <p>{language}</p>
+              <p style={{ color: "#4d7ba9" }}>{language}</p>
             </div>
             {screenElement}
             <p>{paragraph}</p>
