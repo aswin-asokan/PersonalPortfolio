@@ -66,6 +66,15 @@ function App() {
       <Headings head="Projects" />
       &nbsp;
       <Projects
+        heading="System Monitor"
+        paragraph="Keep an eye on your server’s performance effortlessly with the System Monitor App—a minimalistic and lightweight monitoring tool built with Flutter. This app lets you check the real-time status of your system hosted on any server, all through a simple JSON feed, so you can stay informed no matter where you are."
+        pic="/assets/images/system-monitor.png"
+        pos="left"
+        gitLink="https://github.com/aswin-asokan/System-Monitor"
+        language="Flutter"
+      />
+      &nbsp;
+      <Projects
         heading="Pocket Dresses"
         paragraph="Welcome to Pocket Dresses, a charming shopping app created during the Flutter Fly workshop. With a minimalistic and modern design, Pocket Dresses offers a curated selection of cute dresses for every occasion. Enjoy a seamless shopping experience as you explore our stylish collection."
         pic="/assets/images/Cover.png"
