@@ -16,7 +16,12 @@ function Projects({ heading, paragraph, pic, pos, gitLink, language }: Props) {
     screenElementL = (
       <div className="col-md">
         <Card>
-          <img src={pic} className="img-fluid" width="100%" alt={heading} />
+          <img
+            src={pic}
+            className="img-fluid rounded"
+            width="100%"
+            alt={heading}
+          />
         </Card>
       </div>
     );
@@ -24,7 +29,12 @@ function Projects({ heading, paragraph, pic, pos, gitLink, language }: Props) {
     screenElementR = (
       <div className="col-md">
         <Card>
-          <img src={pic} className="img-fluid" width="100%" />
+          <img
+            src={pic}
+            className="img-fluid rounded"
+            width="100%"
+            alt={heading}
+          />
         </Card>
       </div>
     );
@@ -32,7 +42,12 @@ function Projects({ heading, paragraph, pic, pos, gitLink, language }: Props) {
     screenElement = (
       <div className="col-md" style={{ marginBottom: "15px" }}>
         <Card>
-          <img src={pic} className="img-fluid" width="100%" />
+          <img
+            src={pic}
+            className="img-fluid rounded"
+            width="100%"
+            alt={heading}
+          />
         </Card>
       </div>
     );

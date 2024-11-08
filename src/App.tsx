@@ -66,6 +66,15 @@ function App() {
       <Headings head="Projects" />
       &nbsp;
       <Projects
+        heading="Gradgate"
+        paragraph="GradGate is a Student Recruitment Application built using Flutter for the frontend and MySQL (managed with XAMPP) for the backend. The app provides a minimal and intuitive interface that allows students to apply for jobs and internships, companies to post opportunities and manage applicants, and colleges to track the employment or internship status of their students. With streamlined data management and easy customization options, users can navigate and perform tasks efficiently."
+        pic="public/assets/images/gradgate mockup.png"
+        pos="right"
+        gitLink="https://github.com/aswin-asokan/GradGate/tree/main"
+        language="Flutter | MySQL | PHP"
+      />
+      &nbsp;
+      <Projects
         heading="System Monitor"
         paragraph="Keep an eye on your server’s performance effortlessly with the System Monitor App—a minimalistic and lightweight monitoring tool built with Flutter. This app lets you check the real-time status of your system hosted on any server, all through a simple JSON feed, so you can stay informed no matter where you are."
         pic="/assets/images/system-monitor.png"
