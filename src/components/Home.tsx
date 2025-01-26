@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
+import RoleCycler from "./RoleCycler";
 
 function Home() {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
@@ -7,9 +8,9 @@ function Home() {
   let b;
   if (!isSmallScreen) {
     b = (
-      <Button variant="light-blue">
-        <a href="#about" className="custom-link">
-          About Me
+      <Button variant="button-color">
+        <a href="/assets/resume.pdf" className="custom-link">
+          Show Resume
         </a>
       </Button>
     );
@@ -18,10 +19,11 @@ function Home() {
     <div className="container">
       <div className="row align-items-center">
         <div className="col-md">
-          <h1 className="display-5">
-            Hey I'm,<span style={{ color: "#8baac4" }}> Aswin</span>
+          <h1 className="display-5" style={{ fontWeight: "bold" }}>
+            Hey I'm,
+            <span style={{ color: "#73b8db" }}> Aswin</span>
           </h1>
-          <p>Application Developer | Artist | Student</p>
+          <RoleCycler />
           <p>
             I am a self-taught application developer passionate about creative
             problem-solving. I also love to draw while enjoying music. As a
@@ -32,7 +34,7 @@ function Home() {
         </div>
         <div className="col-md">
           <img
-            src="/assets/images/downloadfile-13 (1).png"
+            src="/assets/images/home.png"
             className="img-fluid"
             width="100%"
           />

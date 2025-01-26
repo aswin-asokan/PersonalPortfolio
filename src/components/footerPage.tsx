@@ -15,9 +15,9 @@ function FooterPage() {
   });
   let a1, a2;
   if (isSmallScreen) {
-    a1 = <p>&copy; Aswin Asokan, 2024</p>;
+    a1 = <p>&copy; Aswin Asokan, 2025</p>;
   } else {
-    a2 = <p>&copy; Aswin Asokan, 2024</p>;
+    a2 = <p>&copy; Aswin Asokan, 2025</p>;
   }
   return (
     <div className="container">

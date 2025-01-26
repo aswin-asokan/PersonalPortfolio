@@ -1,0 +1,148 @@
+.timeline {
+    position: relative;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #ccc;
+  }
+  
+  .timeline-event {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .timeline-event.left {
+    left: 0;
+  }
+  
+  .timeline-event.right {
+    left: 50%;
+  }
+  
+  .event-content {
+    padding: 20px;
+    background: #F4F6FF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left; /* Ensure all content is left-aligned */
+  }
+  
+  .event-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+    margin-bottom: 10px;
+  }
+  
+  .company-logo {
+    width: 60px; /* Adjust logo size */
+    height: 60px;
+    border-radius: 50%; /* Optional: Make the logo circular */
+    object-fit: cover; /* Ensure the logo fits well */
+  }
+  
+  .event-content h3 {
+    margin: 0 0 5px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .event-content .company {
+    margin: 0;
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  .event-content .date {
+    margin: 0 0 10px;
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+  }
+  
+  .event-content .description {
+    margin: 0;
+    font-size: 1em;
+    color: #444;
+  }
+  
+  /* Download Button Styles */
+  .download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #789DBC;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add Dot for Desktop View */
+  .timeline-event::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .timeline-event.left::before {
+    right: -5px; /* Position dot on the right for left-aligned events */
+  }
+  
+  .timeline-event.right::before {
+    left: -5px; /* Position dot on the left for right-aligned events */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 20px; /* Move the line to the left */
+    }
+  
+    .timeline-event {
+      width: 100%;
+      padding-left: 50px; /* Add space for the line */
+      padding-right: 25px;
+    }
+  
+    .timeline-event.left,
+    .timeline-event.right {
+      left: 0;
+    }
+  
+    /* Adjust dot positioning for left-aligned containers */
+    .timeline-event.left::before {
+      left: 20px; /* Align with the central line */
+      right: auto; /* Reset right positioning */
+      transform: translateX(-50%); /* Center the dot on the line */
+    }
+  
+    /* Adjust dot positioning for right-aligned containers */
+    .timeline-event.right::before {
+      left: 20px; /* Align with the central line */
+      right: auto; /* Reset right positioning */
+      transform: translateX(-50%); /* Center the dot on the line */
+    }
+  
+  }

@@ -35,8 +35,11 @@ function NavBar() {
             <Nav.Link href="#home" onClick={handleNavLinkClick}>
               Home
             </Nav.Link>
-            <Nav.Link href="#about" onClick={handleNavLinkClick}>
-              About
+            <Nav.Link href="#skills" onClick={handleNavLinkClick}>
+              Skills
+            </Nav.Link>
+            <Nav.Link href="#experience" onClick={handleNavLinkClick}>
+              Experience
             </Nav.Link>
             <Nav.Link href="#projects" onClick={handleNavLinkClick}>
               Projects
