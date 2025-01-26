@@ -5,16 +5,6 @@ import RoleCycler from "./RoleCycler";
 function Home() {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
 
-  let b;
-  if (!isSmallScreen) {
-    b = (
-      <Button variant="button-color">
-        <a href="/assets/resume.pdf" className="custom-link">
-          Show Resume
-        </a>
-      </Button>
-    );
-  }
   return (
     <div className="container">
       <div className="row align-items-center">
@@ -30,7 +20,13 @@ function Home() {
             student, I am dedicated to pursuing my dreams and expanding my
             skills.
           </p>
-          {b}
+          {!isSmallScreen && (
+            <Button variant="button-color">
+              <a href="/assets/resume.pdf" className="custom-link">
+                Show Resume
+              </a>
+            </Button>
+          )}
         </div>
         <div className="col-md">
           <img
@@ -38,9 +34,19 @@ function Home() {
             className="img-fluid"
             width="100%"
           />
+          {isSmallScreen && (
+            <div className="d-grid mt-3">
+              <Button variant="button-color" className="w-100">
+                <a href="/assets/resume.pdf" className="custom-link">
+                  Show Resume
+                </a>
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </div>
   );
 }
+
 export default Home;
