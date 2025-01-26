@@ -31,6 +31,7 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   min-width: 150px; /* Minimum width for consistency */
   height: 50px; /* Reduced height for compact design */
+  flex: 1 1 calc(50% - 30px); /* Allow 2 columns on mobile */
 }
 
 .skill-item:hover {
@@ -48,4 +49,12 @@
   font-size: 0.9em;
   color: #333; /* Text color */
   font-weight: 500; /* Medium font weight */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .skill-item {
+    flex: 1 1 calc(50% - 15px); /* 2 columns on mobile */
+    min-width: auto; /* Allow items to shrink */
+  }
 }
