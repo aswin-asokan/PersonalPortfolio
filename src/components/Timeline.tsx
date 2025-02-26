@@ -27,7 +27,7 @@ const Timeline: React.FC<TimelineProps> = ({ data }) => {
         ref={lineRef}
         initial={{ height: 0 }}
         animate={isLineInView ? { height: "100%" } : {}}
-        transition={{ duration: 1, ease: "easeOut" }}
+        transition={{ duration: 0.3, ease: "easeOut" }} // Faster animation
       />
 
       {/* Timeline Events */}
@@ -40,9 +40,9 @@ const Timeline: React.FC<TimelineProps> = ({ data }) => {
             key={index}
             className={`timeline-event ${index % 2 === 0 ? "left" : "right"}`}
             ref={eventRef}
-            initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+            initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }} // Reduce initial movement
             animate={isEventInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
+            transition={{ duration: 0.3, delay: 0.1 * index, ease: "easeOut" }} // Faster transition & staggered effect
           >
             <div className="event-content">
               <div className="event-header">

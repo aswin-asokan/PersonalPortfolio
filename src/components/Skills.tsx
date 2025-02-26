@@ -14,9 +14,11 @@ import {
   SiVisualstudiocode,
   SiGithub,
   SiArduino,
+  SiJira,
+  SiConfluence,
+  SiBitbucket,
 } from "react-icons/si";
 import "./Skills.css"; // Import the CSS file for styling
-import Headings from "./Headings";
 
 const Skills = () => {
   const skills = [
@@ -35,11 +37,13 @@ const Skills = () => {
     { name: "Arduino", icon: <SiArduino /> },
     { name: "Git", icon: <SiGit /> },
     { name: "GitHub", icon: <SiGithub /> },
+    { name: "Bitbucket", icon: <SiBitbucket /> },
+    { name: "Jira", icon: <SiJira /> },
+    { name: "Confluence", icon: <SiConfluence /> },
   ];
 
   return (
     <div className="skills-container">
-      <Headings head="Skills & Tools" />
       &nbsp;
       <div className="skills-grid">
         {skills.map((skill, index) => (

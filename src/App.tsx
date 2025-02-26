@@ -60,7 +60,7 @@ function App() {
           const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
           const targetPosition =
             targetElement.getBoundingClientRect().top +
-            window.pageYOffset -
+            window.scrollY -
             navbarHeight;
           window.scrollTo({
             top: targetPosition,
@@ -89,7 +89,9 @@ function App() {
       <NavBar />
       &nbsp;
       <Home />
-      &nbsp;<div id="skills"></div>
+      &nbsp;
+      <div id="skills"></div>
+      <Headings head="Skills & Tools" />
       <SkillSection />
       &nbsp;
       <div id="experience"></div>
@@ -99,6 +101,15 @@ function App() {
       &nbsp;
       <div id="projects"></div>
       <Headings head="Projects" />
+      &nbsp;
+      <Projects
+        heading="Ancient Text Preservation with IndicBERT"
+        paragraph="Contributed to an ancient text preservation project focused on restoring and preserving Sanskrit manuscripts. Leveraged a fine-tuned IndicBERT model to predict and reconstruct missing words in ancient texts. This project allows users to upload images of manuscripts, extract text, and utilize BERT-based masked language modeling to restore incomplete content, ensuring historical accuracy and readability."
+        pic="/assets/images/ancient.png"
+        pos="right"
+        gitLink="https://github.com/najiya101/ancient-language-preservation-/tree/main"
+        language="BERT | GCP | Flask"
+      />
       &nbsp;
       <Projects
         heading="Flysoft Floor Plan"

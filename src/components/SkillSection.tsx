@@ -1,5 +1,6 @@
 import { useMediaQuery } from "react-responsive";
 import Skills from "./Skills";
+import "./Skills.css";
 
 function SkillSection() {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 1000px)" });
@@ -9,7 +10,7 @@ function SkillSection() {
       <div className="col-md">
         <img
           src="/assets/images/skills.png"
-          className="img-fluid"
+          className="img-fluid image-padding "
           width="90%"
         />
       </div>
