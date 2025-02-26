@@ -7,7 +7,7 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Experience from "./components/Timeline";
 import SkillSection from "./components/SkillSection";
-import ProjectList from "./components/HiddenProject";
+import ProjectList from "./components/ProjectList";
 const timelineData = [
   {
     title: "Flutter Developer Intern",

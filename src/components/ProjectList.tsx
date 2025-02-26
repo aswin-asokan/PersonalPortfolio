@@ -13,8 +13,7 @@ function ProjectList() {
         "Contributed to an ancient text preservation project focused on restoring and preserving Sanskrit manuscripts. Leveraged a fine-tuned IndicBERT model to predict and reconstruct missing words in ancient texts. This project allows users to upload images of manuscripts, extract text, and utilize BERT-based masked language modeling to restore incomplete content, ensuring historical accuracy and readability.",
       pic: "/assets/images/ancient.png",
       pos: "right",
-      gitLink:
-        "https://github.com/najiya101/ancient-language-preservation-/tree/main",
+      gitLink: "https://github.com/najiya101/ancient-language-preservation-",
       language: "BERT | GCP | Flask",
     },
     {
@@ -32,7 +31,7 @@ function ProjectList() {
         "GradGate is a Student Recruitment Application built using Flutter for the frontend and MySQL (managed with XAMPP) for the backend. The app provides a minimal and intuitive interface that allows students to apply for jobs and internships, companies to post opportunities and manage applicants, and colleges to track the employment or internship status of their students. With streamlined data management and easy customization options, users can navigate and perform tasks efficiently.",
       pic: "/assets/images/gradgate mockup.png",
       pos: "right",
-      gitLink: "https://github.com/aswin-asokan/GradGate/tree/main",
+      gitLink: "https://github.com/aswin-asokan/GradGate",
       language: "Flutter | MySQL | PHP",
     },
     {
@@ -155,7 +154,7 @@ function ProjectList() {
       {/* Show More / Show Less Button */}
       <div className="text-center mt-4">
         <Button
-          variant="primary"
+          variant="show-more"
           onClick={() => setShowAll(!showAll)}
           className="px-4 py-2"
         >
