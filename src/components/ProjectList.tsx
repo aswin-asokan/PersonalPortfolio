@@ -8,6 +8,15 @@ function ProjectList() {
 
   const projects = [
     {
+      heading: "Nyaytra – Indian Legal Document Summarizer & Assistant",
+      paragraph:
+        "Nyaytra (न्याय + यंत्र) means Machine of Justice. It is an intelligent legal assistant designed to simplify Indian court documents. The app reads lengthy legal texts and summarizes them into easy-to-read sections like Facts, Arguments, Judgments, Analysis, and Statutes. It also features a Gemini-powered chatbot that allows users to ask questions and explore the summary or legal topics in a conversational way.\nIdeal for lawyers, students, and curious readers, Nyaytra makes legal information more accessible and understandable.",
+      pic: "/assets/images/Project banners.png",
+      pos: "left",
+      gitLink: "https://github.com/aswin-asokan/legal-text-summarizer",
+      language: "Python | BERT | T5 | FastAPI | React | Gemini API",
+    },
+    {
       heading: "Ancient Text Preservation with IndicBERT",
       paragraph:
         "Contributed to an ancient text preservation project focused on restoring and preserving Sanskrit manuscripts. Leveraged a fine-tuned IndicBERT model to predict and reconstruct missing words in ancient texts. This project allows users to upload images of manuscripts, extract text, and utilize BERT-based masked language modeling to restore incomplete content, ensuring historical accuracy and readability.",
