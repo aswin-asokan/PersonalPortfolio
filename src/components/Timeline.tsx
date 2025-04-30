@@ -9,6 +9,7 @@ interface TimelineEvent {
   description: string;
   logo?: string; // Optional logo URL
   proof?: string; // URL or path to the proof file
+  role?: string; // New role field
 }
 
 interface TimelineProps {
@@ -60,9 +61,16 @@ const Timeline: React.FC<TimelineProps> = ({ data }) => {
               </div>
               <p className="date">{event.date}</p>
               <p className="description">{event.description}</p>
-              {event.proof && (
+
+              {/* Conditional rendering based on the role */}
+              {event.role === "work" && event.proof && (
                 <a href={event.proof} download className="download-button">
                   Show Certification
+                </a>
+              )}
+              {event.role === "instructor" && event.proof && (
+                <a href={event.proof} className="download-button">
+                  Show Documentation
                 </a>
               )}
             </div>

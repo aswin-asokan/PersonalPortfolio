@@ -10,6 +10,16 @@ import SkillSection from "./components/SkillSection";
 import ProjectList from "./components/ProjectList";
 const timelineData = [
   {
+    title: "ISTE Flutter Bootcamp Instructor",
+    company: "ISTE MACE Student Chapter",
+    date: "March 2025 - Present",
+    description:
+      "Guided 30+ students on Flutter app development, teaching them to build real-world applications. The bootcamp covers key tasks like creating an app with multi-page functionality (including registration and a home page with to-do lists), and connecting to an online database. With structured documentation and hands-on examples.",
+    logo: "/assets/images/iste.png", // Example logo URL
+    proof: "https://aswin-asokan.github.io/iste_bootcamp/",
+    role: "instructor",
+  },
+  {
     title: "Flutter Developer Intern",
     company: "Flysoft Systems",
     date: "Oct 2024 - Dec 2024",
@@ -18,6 +28,7 @@ const timelineData = [
     logo: "/assets/images/flysoftsystems_logo.jpeg", // Example logo URL
     proof:
       "/assets/certification/Flysoft Internship Report Aswin v2 signed.pdf",
+    role: "work",
   },
   {
     title: "Technology Lead",
@@ -35,6 +46,7 @@ const timelineData = [
       "Completed an internship organised by Laxmiinfotek and developed a to-do application",
     logo: "/assets/images/laxmiinfotech_logo.png",
     proof: "/assets/certification/1692935322976.jpeg",
+    role: "work",
   },
 ];
 function App() {
