@@ -12,7 +12,7 @@ const timelineData = [
   {
     title: "ISTE Flutter Bootcamp Instructor",
     company: "ISTE MACE Student Chapter",
-    date: "March 2025 - Present",
+    date: "Mar 2025 - Present",
     description:
       "Guided 30+ students on Flutter app development, teaching them to build real-world applications. The bootcamp covers key tasks like creating an app with multi-page functionality (including registration and a home page with to-do lists), and connecting to an online database. With structured documentation and hands-on examples.",
     logo: "/assets/images/iste.png", // Example logo URL
