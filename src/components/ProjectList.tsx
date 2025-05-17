@@ -8,6 +8,15 @@ function ProjectList() {
 
   const projects = [
     {
+      heading: "Trelza PeekPub",
+      paragraph:
+        "Trelza PeekPub is a clean and lightweight pub.dev tracker app built to help developers browse, search, and explore Flutter/Dart packages effortlessly. Whether you're looking for the latest package versions, supported platforms, or official links (pub.dev, docs, GitHub), PeekPub helps you quickly find the perfect package for your project.",
+      pic: "/assets/images/peekpub.png",
+      pos: "right",
+      gitLink: "https://github.com/aswin-asokan/peekpub",
+      language: "Flutter | Pub.dev API",
+    },
+    {
       heading: "Nyaytra – Indian Legal Document Summarizer & Assistant",
       paragraph:
         "Nyaytra (न्याय + यंत्र) means Machine of Justice. It is an intelligent legal assistant designed to simplify Indian court documents. The app reads lengthy legal texts and summarizes them into easy-to-read sections like Facts, Arguments, Judgments, Analysis, and Statutes. It also features a Gemini-powered chatbot that allows users to ask questions and explore the summary or legal topics in a conversational way.\nIdeal for lawyers, students, and curious readers, Nyaytra makes legal information more accessible and understandable.",
